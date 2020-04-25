@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="container mx-auto ">
-      <h2 className="text-center text-4xl font-bold">React & Tailwind CSS</h2>
+      <h2 className="text-center text-4xl font-bold">Photo Search App</h2>
       <SearchBar searchText={(text) => setTerm(text)} />
       {Loading ? (
         <h1> Loading ...</h1>
