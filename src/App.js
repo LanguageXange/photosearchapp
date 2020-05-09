@@ -22,10 +22,10 @@ function App() {
 
   return (
     <div className="container mx-auto ">
-      <h2 className="text-center text-4xl font-bold">Photo Search App</h2>
+      <h2 className="text-center text-4xl font-bold">Search Photo App</h2>
       <SearchBar searchText={(text) => setTerm(text)} />
       {Loading ? (
-        <h1> Loading ...</h1>
+        <h1 style={{ textAlign: "center" }}> Still loading ...</h1>
       ) : (
         <div className="grid grid-cols-3 gap4">
           {images.map((image) => (
